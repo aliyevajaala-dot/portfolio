@@ -1,0 +1,87 @@
+# 🚀 Hero Section
+
+## Goal
+3 saniyədə kim olduğumu və nə etdiyimi aydın göstərmək
+
+---
+
+## Headline
+
+Vizual deyil.  
+Qərar dizayn edirəm.
+
+---
+
+## Alternative Headlines
+
+- Sadə interfeys yox, aydın qərarlar.
+- İstifadəçi üçün yox, qərar üçün dizayn edirəm.
+
+---
+
+## Subheadline
+
+Kompleks məhsulları sadələşdirir, istifadəçinin qərar vermə prosesini daha aydın və sürətli edirəm.
+
+---
+
+## CTA
+
+- Primary: View Projects
+- Secondary: Contact Me
+
+---
+
+## Layout Structure
+
+- Left side:
+  - Headline
+  - Subheadline
+  - CTA buttons
+
+- Right side:
+  - Clean UI preview (mockup və ya case study preview)
+  - Minimal vizual, diqqəti yayındırmayan
+
+---
+
+## Visual Style
+
+- Background: dark (#0A0A0A)
+- Text: white (#F5F5F5)
+- Accent: #FF6F61 yalnız CTA üçün
+
+---
+
+## UX Rules
+
+- Headline max 2 sətir
+- Subheadline max 2 cümlə
+- CTA dərhal görünməlidir (above the fold)
+- Vizual sadə olmalıdır (noise yox)
+
+---
+
+## Interaction
+
+- Hover:
+  - CTA → yüngül scale (1.02)
+- Motion:
+  - Fade-in + slight upward movement
+
+---
+
+## What to Avoid
+
+- Uzun cümlələr
+- Generic sözlər (“creative”, “passionate”)
+- Çox rəng
+- Ağır illüstrasiyalar
+
+---
+
+## Purpose
+
+Bu hissə:
+- diqqət çəkmək üçün deyil  
+- qərar vermək üçündür
