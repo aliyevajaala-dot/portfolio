@@ -1,4 +1,4 @@
-# 🚀 Hero Section
+#  Hero Section
 
 ## Goal
 3 saniyədə kim olduğumu və nə etdiyimi aydın göstərmək
@@ -42,7 +42,7 @@ Kompleks məhsulları sadələşdirir, istifadəçinin qərar vermə prosesini d
 - Right side:
   - Clean UI preview (mockup və ya case study preview)
   - Minimal vizual, diqqəti yayındırmayan
-### 🎨 UI System
+###  UI System
 
 ---
 
