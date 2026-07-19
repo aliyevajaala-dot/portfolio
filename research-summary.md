@@ -1,7 +1,7 @@
 Research Question
 Dil öyrənmə tətbiqlərindən istifadə edən istifadəçilər niyə davamlı istifadə etmir və hansı səbəblərə görə tətbiqi tərk edir?
 ________________________________________Method
-Bu araşdırma çərçivəsində dil öyrənmə tətbiqindən istifadə etmiş 1 istifadəçi ilə təxminən 5-10 dəqiqəlik yarı-strukturlaşdırılmış intervyu aparılmışdır.İntervyu zamanı istifadəçinin tətbiqdən istifadə tezliyi, gözləntiləri və onu tərk etmə səbəbləri araşdırılmışdır. Məlumatlar transkribə edilərək analiz olunmuşdur.
+Bu araşdırma çərçivəsində dil öyrənmə tətbiqindən istifadə etmiş 1 istifadəçi ilə təxminən 5-10 dəqiqəlik yarı-strukturlaşdırılmış intervyu aparılmışdır.İntervyu zamanı istifadəçinin tətbiqdən istifadə tezliyi, gözləntiləri və onu tərk etmə səbəbləri araşdırılmışdır. Məlumatlar transkribə edilərək analiz olunmuşdur.İntervyu audio şəklində qeydə alınmış və OpenAI Whisper vasitəsilə avtomatik transkribə edilmiş, daha sonra düzgünlük üçün nəzərdən keçirilmişdir.
 ________________________________________
 Key Insights
 1. İstifadəçi motivasiya itdikdə tətbiqi tərk edir
