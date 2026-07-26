@@ -1,0 +1,49 @@
+Prioritetləşdirmə
+
+Priority:
+
+Deep-link və giriş sürtünməsi — bildirişdən tətbiqə keçiddə itirilən kontekst (primary)
+Ödəniş ekranında etimad/aydınlıq boşluğu — məbləğ, provayder, son tarix barədə qeyri-müəyyənlik (secondary)
+Ödəniş metodu seçimində əlavə addımlar — kart/balans seçimi, təsdiq ekranlarının çoxluğu (supporting)
+1. Deep-link və giriş sürtünməsi
+
+Problem: İstifadəçi bildirişə toxunduqda çox vaxt tətbiqin ana səhifəsinə və ya login ekranına düşür, konkret borc ekranına yox — nəticədə "hara getdiyini" itirir və çıxır.
+
+Hypothesis: İstifadəçi bildirişi açanda zehnində artıq konkret niyyət var ("bu borcu ödəmək istəyirəm"). Əgər tətbiq bu niyyəti dərhal təsdiqləməsə (yəni birbaşa həmin borcu göstərməsə), istifadəçi əlavə naviqasiya tələb olunduğunu görüb bunu "sonraya" saxlayır — xüsusən yaşlı istifadəçilər üçün naviqasiya özü kognitiv baryerdir.
+
+UX Solution: Bildirişə toxunma → session aktivdirsə birbaşa "Ödəniş təsdiqi" ekranına deep-link (login tələb olunmadan, yalnız biometrik/PIN sürətli təsdiqlə). Session yoxdursa, login sonrası avtomatik həmin borc ekranına yönləndirmə (login → home yox, login → intended screen).
+
+Experiment: A/B: Qrup A — bildiriş → home ekran (cari axın); Qrup B — bildiriş → birbaşa ödəniş təsdiq ekranı. Ölçü: bildirişdən ödənişə keçən istifadəçi faizi və vaxtı.
+
+Metric: Drop-off 65% → hədəf 40-45% (ilk mərhələdə).
+
+2. Ödəniş ekranında etimad/aydınlıq boşluğu
+
+Problem: İstifadəçi ödəniş ekranına düşəndə məbləğin haradan gəldiyi, hansı provayderə aid olduğu və son ödəniş tarixi bir baxışda aydın deyil — bu şübhə yaradır və istifadəçi "yoxlamaq üçün" tətbiqdən çıxıb başqa mənbədən (kağız qəbz, çağrı mərkəzi) təsdiq axtarır.
+
+Hypothesis: Etimadsızlıq = tərəddüd = tərk. Xüsusən kommunal ödənişlərdə səhv məbləğ ödəmək qorxusu güclüdür, ona görə istifadəçi "əmin olmaq" adı altında prosesi dayandırır.
+
+UX Solution: Ödəniş ekranının yuxarı hissəsində 3 etimad siqnalı sabit və vizual şəkildə: provayder loqosu/adı, dəqiq məbləğ (böyük şrift), son ödəniş tarixi. Əlavə olaraq "əvvəlki ay ilə müqayisə" kimi kiçik kontekst xətti (məs: "keçən aydan 3 AZN çox") — bu, izahedici kontekst verib şübhəni azaldır, əlavə addım yaratmadan.
+
+Experiment: Ödəniş ekranının iki versiyası: cari (minimal məlumat) vs etimad-bloklu versiya. Ölçü: ekranda keçirilən vaxt (uzun vaxt = tərəddüd) və tamamlama faizi.
+
+Metric: Ödəniş ekranından tərk faizi 30% azalma; tamamlama rate-i əlavə 10-15% artım.
+
+3. Ödəniş metodu seçimində əlavə addımlar
+
+Problem: İstifadəçi hər dəfə ödəniş metodunu (kart/balans) yenidən seçməli olur, hətta əvvəlki dəfə eyni metodu istifadə etsə belə — bu, təkrarlanan qərar yorğunluğu yaradır.
+
+Hypothesis: Aylıq təkrarlanan ödənişlərdə istifadəçilər eyni metodu istifadə edir. Hər dəfə yenidən seçim tələb olunması "niyə mən bunu yenidən etməliyəm" hissi yaradır və prosesi uzadır, xüsusən tələsik istifadəçilər üçün tərk səbəbi olur.
+
+UX Solution: Son istifadə olunan ödəniş metodunu default olaraq əvvəlcədən seçilmiş göstər, dəyişmək istəyən üçün isə bir tıqla "başqa metod" seçimi qalsın (seçimi yox etmək yox, sadəcə default-u ağıllı etmək).
+
+Experiment: Qrup A — hər dəfə boş seçim; Qrup B — son metod default seçilmiş. Ölçü: ödəniş metodu seçim ekranında sərf olunan vaxt və bu addımdan tərk faizi.
+
+Metric: Bu addımda tərk 8-10% azalma, ümumi flow tamamlama vaxtı 20% qısalma.
+
+İdeal user flow (maksimum 3 addım)
+Bildiriş → Təsdiq ekranı: Toxunma ilə birbaşa borc detalları (provayder, məbləğ, tarix) + default ödəniş metodu göstərilir
+Bir tıqla təsdiq: Biometrik/PIN ilə ödənişi təsdiqlə (metod dəyişmək istəsə, əlavə tıqla mümkün)
+Uğur ekranı: Ödəniş edildi + qəbz/təsdiq nömrəsi göstərilir, paylaşma/saxlama seçimi
+
+Bu axın istifadəçidən yalnız 1 məcburi qərar (təsdiqlə/təsdiqləmə) tələb edir, qalanı sistem tərəfindən ağıllı default olaraq idarə olunur.
