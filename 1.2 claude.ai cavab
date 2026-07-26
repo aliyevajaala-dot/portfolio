@@ -1,0 +1,70 @@
+Prioritetləşdirmə
+
+Priority:
+
+Seçilmiş yerin səhnəyə görə görünüşünün aydın olmaması (highest impact — primary) — istifadəçi nəyə görə pul verdiyini "görmür", bu da qərarsızlığın əsas mənbəyidir
+Zona daxilində qiymət fərqlərinin izah olunmaması (medium impact — secondary) — güvən (trust) problemi yaradır, "aldadılma" hissi doğurur
+Seçim zamanı vizual/kontekstual feedback-in zəif olması (supporting) — qərarı gücləndirən "confirmation" hissi çatışmır
+1. Problem: Səhnəyə görə görünüş aydın deyil
+
+Hypothesis:
+İstifadəçi seat map-də yalnız nöqtə/kvadrat şəklində yer görür, amma real həyatda o yerdən nə görəcəyini təsəvvür edə bilmir. Bu, "abstract-to-concrete" boşluğudur — insan mücərrəd simvolu konkret təcrübəyə çevirə bilmədikdə, qərarını gecikdirir və ya ümumiyyətlə checkout-a keçmir, çünki risk hiss edir ("bəlkə səhnə görünməyəcək").
+
+UX Solution:
+
+Hər yer seçildikdə, seat map-in yanında və ya altında kontekstual "view preview" göstərilsin (statik illüstrasiya/foto, real video şərt deyil)
+Preview 3 səviyyəli sadə kateqoriyada ola bilər: "Tam görünüş", "Qismən maneə", "Yan bucaq" — mürəkkəb 3D render yerinə sadə piktoqram + qısa mətn kifayətdir
+Bu, mövcud seat map strukturunu dəyişmir, sadəcə seçim anında əlavə panel/bottom-sheet açır
+
+Experiment:
+A/B test: Kontrol qrupu (mövcud seat map, preview yoxdur) vs test qrupu (preview bottom-sheet ilə). Seat selection ekranında qalma müddəti, geri qayıtma (yer dəyişmə) tezliyi və seat→checkout conversion müqayisə edilsin.
+
+Metric:
+Seat selection → checkout conversion: məsələn 35% → 45–50%. Əlavə metrika: yer dəyişdirmə sayı (seat-switch rate) azalmalıdır — bu, qərar əminliyinin artdığını göstərir.
+
+2. Problem: Qiymət fərqləri izah olunmur
+
+Hypothesis:
+Eyni zonada fərqli qiymətlər gördükdə istifadəçi bunu ya səhv, ya da ədalətsiz hesab edir ("niyə yan-yana yerlər fərqli qiymətdədir?"). İzahat olmadıqda istifadəçi ən ucuz yeri seçir (ehtiyat prinsipi) və ya güvənsizlik səbəbindən platformanı tərk edir.
+
+UX Solution:
+
+Qiymətə klikləndikdə/toxunulduqda kiçik tooltip və ya bottom-sheet: "Bu yer səhnəyə daha yaxındır" / "Bu yerdən görünüş bir qədər yan bucaqlıdır" kimi 1 cümləlik səbəb
+Qiymət fərqinin görünüş keyfiyyəti ilə əlaqəsi vizual olaraq seat map-də rəng kodu vasitəsilə əvvəlcədən ötürülsün (məs. daha tünd rəng = daha yaxşı görünüş = daha yüksək qiymət) — bu istifadəçini "niyə" sualından əvvəl məlumatlandırır
+Legend/açıqlama sadə, 3 kateqoriyadan çox olmasın
+
+Experiment:
+Qiymət izahı olan və olmayan versiyalar arasında A/B test; həmçinin post-purchase mikro-sorğu: "Qiymətə görə seçiminizə nə qədər əmin idiniz?" (1–5 şkala)
+
+Metric:
+Support/şikayət tiketlərinin azalması (qiymətlə bağlı) və confidence score-un artması (məs. 3.2 → 4.2/5). Conversion üzərində dolayı təsir gözlənilir.
+
+3. Problem: Seçim zamanı vizual feedback zəifdir
+
+Hypothesis:
+İstifadəçi yeri seçdikdən sonra sistemin onu "qeydə aldığını" hiss etmirsə, təkrar toxunur, tərəddüd edir və ya yanlışlıqla başqa yer seçir. Zəif feedback micro-anxiety yaradır ki, bu da checkout-a keçidi ləngidir.
+
+UX Solution:
+
+Seçilmiş yer aydın highlight (rəng + kiçik animasiya, məs. pulse effekti) ilə fərqləndirilsin
+Seçimdən dərhal sonra ekranın aşağısında sabit "sticky" panel açılsın: seçilmiş yer nömrəsi, qiymət, kiçik preview thumbnail və "Davam et" düyməsi bir yerdə görünsün — istifadəçi yuxarı-aşağı scroll etmədən əmin olsun ki, seçim düzgün qeydə alınıb
+Bu sticky panel həm də system-driven yanaşmanı dəstəkləyir: minimum əlavə klik tələb olunur
+
+Experiment:
+Highlight+sticky panel olan/olmayan versiyalar arasında rage-tap (təkrar toxunma) hadisələrinin sayını və seat selection-dan checkout-a keçid vaxtını ölçmək
+
+Metric:
+Ortalama seat selection tamamlanma vaxtı azalsın (məs. 45san → 25san), rage-tap tezliyi azalsın
+
+Təkmilləşdirilmiş Seat Selection Flow (2–3 addım)
+
+Addım 1 — Seat Map + Ağıllı Filtr (System-driven)
+İstifadəçi mövcud seat map-i görür, amma sistem əvvəlcədən büdcə/görünüş prioritetinə əsasən (əgər əvvəlki seçim varsa) tövsiyə olunan 1–2 yeri yüngül şəkildə vurğulayır ("Tövsiyə olunan" badge). Rəng kodu ilə qiymət-görünüş əlaqəsi ötürülür.
+
+Addım 2 — Seçim + Kontekstual Preview (Bottom-sheet)
+İstifadəçi yerə toxunan kimi highlight aktivləşir, bottom-sheet açılır: kiçik "view preview" (piktoqram/illüstrasiya), qiymət, qısa 1 cümlə izah ("Səhnəyə yaxın, tam görünüş"), sticky "Davam et" düyməsi.
+
+Addım 3 — Təsdiq (Confirm & Checkout)
+Seçilmiş yer(lər) yekun icmalda göstərilir (nömrə, qiymət, preview thumbnail), istifadəçi bir toxunuşla checkout-a keçir. Geri qayıdıb dəyişmək istəsə, 1 klikdə Addım 1-ə qayıda bilər.
+
+Bu flow mövcud strukturu qorumaqla, yalnız qərar dəstəyi qatını (preview + izah + feedback) əlavə edir — dark pattern yoxdur, sadəcə şəffaflıq artırılır.
