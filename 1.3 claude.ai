@@ -1,0 +1,34 @@
+Priority:
+
+Ödəniş metodunun seçimi və məlumat daxiletmə mərhələsi (highest impact)
+Güvən və şəffaflıq siqnallarının çatışmazlığı (medium impact)
+Proses uzunluğu və geri dönüş qorxusu (supporting)
+
+1. Problem: Ödəniş metodu seçimi və kart məlumatlarının manual daxil edilməsi yüksək friction yaradır
+
+Hypothesis: İstifadəçi seat selection-dan sonra sürətli davam etmək istəyir, amma kart nömrəsi, tarix, CVV kimi sahələri əl ilə doldurmaq həm vaxt aparır, həm də səhv ehtimalını artırır. Xüsusilə mobil-də bu, cognitive load yaradır və istifadəçi "sonra edərəm" deyib tərk edir.
+UX Solution: One-tap payment (Apple Pay / Google Pay) default və ən gözə çarpan seçim kimi ekranın yuxarısında yerləşdirilməli, kart daxiletmə isə secondary/collapsed seçim olmalıdır. Əvvəlki sifarişlərə əsasən sistem istifadəçinin ən çox işlətdiyi metodu avtomatik pre-select etməlidir (dəyişmək mümkün olmaqla).
+Experiment: A/B test — Variant A: hazırkı flow (bütün metodlar bərabər görünür); Variant B: one-tap metod default seçilmiş və böyük CTA kimi, digərləri "başqa metod" linki altında gizlədilib.
+Metric: Payment mərhələsindəki completion rate 40% → 52-55%; ödəniş sahəsini doldurmağa sərf olunan orta vaxt 45san → 15san.
+
+2. Problem: İstifadəçi ödəniş zamanı təhlükəsizlik və şəffaflıq hissi keçirmir
+
+Hypothesis: İstifadəçi son anda əlavə haqlar görəndə, ya da kart məlumatlarının necə qorunduğuna dair heç bir siqnal olmadan, tərəddüd edir və prosesi dayandırır. Bu, "sürpriz cost" və "etibar boşluğu" davranışıdır.
+UX Solution: Qiymət seat selection mərhələsindən etibarən bütün əlavə haqlarla (xidmət haqqı, vergi) birlikdə əvvəlcədən göstərilməli, payment ekranında dəyişməməlidir. Ödəniş düyməsinin yanında qısa etibar nişanları (SSL/şifrələmə ikonu, "bu əməliyyat qorunur" mesajı) əlavə olunmalı.
+Experiment: Payment səhifəsinə qısa "Total cost breakdown" bloku əlavə edib, əlavə olunmadan əvvəl və sonra completion rate müqayisə edilsin.
+Metric: Payment mərhələsində geri qayıdıb seat selection-a dönmə faizi 18% → 8%; ümumi checkout completion +5-8%.
+
+3. Problem: Ödəniş prosesi psixoloji olaraq "uzun" görünür və geri dönüş qorxusu yaradır
+
+Hypothesis: İstifadəçi neçə addım qaldığını bilmirsə, prosesi qeyri-müəyyən hiss edir və "bitməyəcək" düşüncəsi ilə çıxır. Bu xüsusilə tələsik alıcılarda (konsert biletləri kimi tez tükənən məhsullarda) baş verir.
+UX Solution: Progress indicator (məs. "Addım 2/3") əlavə olunmalı, hər addımda "geri qayıt" imkanı aydın olmalı ki, istifadəçi "təzədən başlamalıyam" qorxusu yaşamasın. Son təsdiq addımı bir ekranda cəmlənməli (review + pay birgə).
+Experiment: Progress bar olan və olmayan versiyaları test edib, drop-off nöqtəsinin addım-addım harada baş verdiyini ölçmək.
+Metric: Payment başlanğıcından tamamlanmasına qədər drop-off nöqtələrinin sayı azalmalı; overall checkout completion +10-15% (business target ilə üst-üstə düşür).
+
+İdeal Payment User Journey (3 addım):
+
+Review & Pay — Seat + qiymət + əlavə haqlar bir ekranda göstərilir, one-tap payment metodu default seçilib, dəyişmək istəyənlər üçün alternativ metod bir kliklə əlçatandır.
+Confirm — Biometrik/one-tap təsdiq (Face ID, Touch ID və ya PIN) ilə ödəniş həyata keçirilir, sistem heç bir əlavə forma tələb etmir.
+Success — Anında təsdiq ekranı, bilet/QR kod dərhal göstərilir, əlavə addım tələb olunmur.
+
+Bu journey-də istifadəçidən yalnız bir qərar tələb olunur (ödəniş metodunu təsdiqləmək), qalan hər şey sistem tərəfindən default olaraq idarə olunur — bu da cognitive load-u minimuma endirir və dark pattern istifadə etmədən sürəti artırır.
