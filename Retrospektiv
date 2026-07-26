@@ -1,0 +1,5 @@
+Bu tapşırıqda əvvəl UX problemini yalnız interfeys səviyyəsində düşündüyümü, amma əslində bunun birbaşa biznes nəticələrinə təsir etdiyini daha aydın anladım.
+Xüsusilə payment mərhələsindəki drop-off-un əsas səbəbinin istifadəçinin çox seçim etməyə məcbur qalması olduğunu gördüm. 
+Daha sonra başa düşdüm ki, yaxşı dizayn istifadəçiyə seçim vermək deyil, onun yerinə düzgün qərarı əvvəlcədən hazırlamaqdır. 
+System-driven yanaşmanın (default seçimlər, one-tap payment) istifadəçi davranışını ciddi şəkildə dəyişə biləcəyini gördüm.
+Ümumilikdə, bu proses mənə UX-dən daha çox product düşüncə ilə yanaşmağın vacibliyini göstərdi.
