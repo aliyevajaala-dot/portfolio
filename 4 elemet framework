@@ -1,0 +1,41 @@
+Kontekst:
+Sən Azərbaycanda istifadə olunan kommunal ödəniş mobil tətbiqində çalışan 8+ il təcrübəli senior UX dizaynersən. İstifadəçilər aylıq kommunal borcları haqqında bildiriş (notification) alırlar. Məhsul mobil-first-dir və müxtəlif yaş qrupları tərəfindən istifadə olunur.
+
+Problem:
+İstifadəçilər bildirişi açdıqdan sonra 65% hallarda tətbiqdən çıxır və ödənişi tamamlamır. Bu, bildirişdən ödənişə keçid axınında ciddi istifadəçi itkisi olduğunu göstərir.
+
+Məqsəd:
+Bildirişdən ödənişə keçiddə istifadəçi itkisini azaltmaq və completion rate-i artırmaq üçün ən kritik UX problemlərini müəyyən et və optimizasiya təklif et.
+
+Format:
+
+Əvvəlcə problemləri prioritetləşdir:
+Priority:
+1. (ən böyük təsir — primary)
+2. (orta təsir — secondary)
+3. (dəstəkləyici — supporting)
+
+Sonra yalnız TOP 3 problemi təqdim et və hər biri üçün yaz:
+- Problem (qısa və konkret)
+- Hypothesis (niyə baş verir — istifadəçi davranışı ilə əlaqələndir)
+- UX Solution (yalnız UI yox, flow və decision səviyyəsində həll)
+- Experiment (A/B test və ya yoxlama üsulu)
+- Metric (ölçülə bilən nəticə — məsələn 65% → 45%)
+
+Sonda əlavə et:
+- Təkmilləşdirilmiş ideal user flow (maksimum 3 addım)
+
+Məhdudiyyətlər:
+
+- Tətbiq sadə və müxtəlif yaş qrupları üçün anlaşılan qalmalıdır
+- Ödəniş prosesi maksimum 3 addımdan ibarət olmalıdır
+- Bildirişlər lokal istifadəçi davranışına uyğun olmalıdır (aydın dil, güvən hissi)
+- Tam redesign yox, yalnız UX optimizasiya
+- Dark pattern və manipulativ UX istifadə olunmasın
+- İstifadəçiyə əlavə kognitiv yük yaratma
+
+Tələblər:
+
+- Bildirişdən birbaşa ödənişə deep-link yanaşması nəzərə alınsın
+- Minimum addım və minimum qərar prinsipi tətbiq edilsin
+- Güvən siqnalları (provayder, məbləğ, tarix) aydın göstərilsin
