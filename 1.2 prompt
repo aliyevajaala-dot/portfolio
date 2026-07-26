@@ -1,0 +1,41 @@
+Kontekst:
+Sən 5+ il təcrübəli UX/UI dizaynersən və event ticketing platformasında (konsert, teatr və s.) çalışırsan. Məhsul mobil-first-dir. Hədəf istifadəçilər 18–40 yaş arasıdır və bilet alarkən tez, aydın və güvənli qərar vermək istəyirlər.
+
+Problem:
+Seat selection ekranında istifadəçilər seçdikləri yerlərin səhnəyə görə görünüşünü və real dəyərini düzgün qiymətləndirə bilmirlər. Səhnəyə olan məsafə və baxış bucağı aydın deyil. Bundan əlavə, eyni zonada olan yerlər arasında qiymət fərqlərinin səbəbi istifadəçiyə izah olunmur. Bu qeyri-müəyyənlik istifadəçinin seçimə olan inamını azaldır və seat selection → checkout conversion rate-in aşağı olmasına səbəb olur.
+
+Məqsəd:
+İstifadəçinin seat seçimi zamanı qərar verməsini sadələşdirmək, confidence səviyyəsini artırmaq və conversion rate-i yüksəltmək.
+
+Format:
+
+Əvvəlcə problemləri prioritetləşdir:
+Priority:
+1. (highest impact — primary)
+2. (medium impact — secondary)
+3. (supporting)
+
+Sonra yalnız TOP 3 problemi təqdim et və hər biri üçün yaz:
+- Problem (qısa və konkret)
+- Hypothesis (niyə baş verir — istifadəçi davranışı ilə əlaqələndir)
+- UX Solution (yalnız UI yox, decision və flow səviyyəsində həll)
+- Experiment (A/B test və ya yoxlama üsulu)
+- Metric (ölçülə bilən nəticə — məsələn conversion 35% → 50%)
+
+Sonda əlavə et:
+- Təkmilləşdirilmiş seat selection flow (maksimum 2–3 addım, step-by-step)
+
+Məhdudiyyətlər:
+
+- Mövcud seat map strukturu tam dəyişdirilməməlidir
+- Mobil istifadə prioritetdir (sadə və sürətli interaction)
+- Seat selection maksimum 2–3 addımda tamamlanmalıdır
+- Dark pattern və manipulativ UX istifadə olunmasın
+- UI sadə qalmalı, istifadəçini yormamalıdır
+
+Tələblər:
+
+- İstifadəçi minimum qərar verməlidir (system-driven yanaşma)
+- Seçilmiş yerin səhnəyə görə görünüşü aydın hiss olunmalıdır (visual və ya kontekstual preview)
+- Qiymət fərqləri istifadəçiyə izah olunmalıdır (sadə və aydın formada)
+- Seçilmiş yer üçün vizual feedback (highlight, marker və s.) olmalıdır1
