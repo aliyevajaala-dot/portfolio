@@ -1,0 +1,41 @@
+Kontekst:
+Sən 8+ il təcrübəli senior product dizaynersən və event ticketing platformasında çalışırsan (konsert, tədbir və s.). Məhsul mobil-first-dir və istifadəçilər əsasən seat selection mərhələsindən sonra ödənişə keçirlər. Hədəf istifadəçilər sürətli, təhlükəsiz və problemsiz ödəniş gözləyirlər.
+
+Problem:
+İstifadəçilər seat selection mərhələsini uğurla tamamlasalar da, payment mərhələsində yüksək drop-off müşahidə olunur. İstifadəçilər ödənişi tamamlamadan prosesi tərk edir, bu isə checkout completion rate-in aşağı olmasına və birbaşa gəlir itkisinə səbəb olur. Bu davranış istifadəçinin güvən, sürət və proses aydınlığı ilə bağlı problemlər yaşadığını göstərir.
+
+Məqsəd:
+Payment flow-da istifadəçi itkisini azaltmaq, checkout completion rate-i artırmaq və ümumi conversion-u yüksəldərək məhsulun gəlirini artırmaq.
+
+Format:
+Əvvəlcə problemləri prioritetləşdir:
+Priority:
+1. (highest impact)
+2. (medium impact)
+3. (supporting)
+
+Sonra yalnız TOP 3 ən kritik problemi təqdim et və hər biri üçün yaz:
+- Problem (qısa və konkret)
+- Hypothesis (niyə baş verir — user davranışı ilə əlaqələndir)
+- UX Solution (yalnız UI yox, decision və flow səviyyəsində həll)
+- Experiment (A/B test və ya konkret yoxlama metodu)
+- Metric (ölçülə bilən və target ilə — məsələn conversion 40% → 55%)
+
+Əlavə:
+- Payment flow üçün optimallaşdırılmış ideal user journey-ni qısa şəkildə təsvir et
+
+Məhdudiyyətlər:
+- Ödəniş prosesi maksimum 3 addımdan ibarət olmalıdır
+- Mövcud texniki struktur tam dəyişdirilməməlidir (yalnız optimizasiya)
+- Mobil istifadə prioritetdir (sadə və sürətli interaction)
+- Güvən hissi qorunmalı və gücləndirilməlidir (security signals, aydın informasiya)
+- Dark pattern və manipulativ UX istifadə olunmasın
+- İstifadəçiyə əlavə kognitiv yük yaratmadan qərar vermə prosesi sadələşdirilməlidir
+
+Tələblər:
+- Həllər mümkün qədər system-driven olmalıdır (istifadəçi minimum qərar versin)
+- One-tap payment (Apple Pay / Google Pay) əsas seçim kimi nəzərə alınsın
+- Smart default payment method (istifadəçinin əvvəlki davranışına əsasən) təklif olunsun
+
+Business Impact:
+Checkout completion rate-də +10–15% artım birbaşa olaraq daha çox completed purchase və ümumi gəlirin artmasına səbəb olmalıdır.
