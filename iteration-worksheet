@@ -1,0 +1,131 @@
+## Problem
+
+Food delivery tətbiqində checkout mərhələsində istifadəçilərin ~40%-i sifarişi tamamlamadan prosesi tərk edir.
+
+---
+
+## Strategiya 1: Friction azaltmaq (Flow Optimization)
+
+**Insight:** Uzun və mürəkkəb checkout prosesi istifadəçini yorur və qərarı gecikdirir.
+
+**Hipotez:** Addımların sayı azaldılarsa və proses sadələşdirilərsə, completion rate artar.
+
+**Həll:**
+
+* Multi-step checkout → single-page checkout
+* Progress indicator əlavə etmək
+* Lazımsız field-ləri silmək və autofill istifadə etmək
+
+**Təsir:** İstifadəçi daha az düşünür və daha sürətli qərar verir → abandonment azalır
+
+---
+
+## Strategiya 2: Data entry yükünü azaltmaq
+
+**Insight:** Məcburi və təkrarlanan məlumat daxil etmə istifadəçidə yorğunluq yaradır.
+
+**Hipotez:** Minimum məlumat tələb edilsə və təkrar giriş aradan qaldırılsa, istifadəçi prosesi yarımçıq qoymaz.
+
+**Həll:**
+
+* Yalnız əsas məlumatları tələb etmək
+* Optional field-ləri məcburi etməmək
+* Address və user info üçün autofill
+
+**Təsir:** Mental yük azalır → istifadəçi daha rahat davam edir
+
+---
+
+## Strategiya 3: Sürətli ödəniş təcrübəsi (Payment Convenience)
+
+**Insight:** Kart məlumatlarını hər dəfə daxil etmək istifadəçi üçün əlavə baryerdir.
+
+**Hipotez:** Ödəniş prosesi sadələşdirilərsə və sürətləndirilərsə, istifadəçi checkout-u tamamlayar.
+
+**Həll:**
+
+* “Save card” funksiyası
+* One-click payment
+* Apple Pay / Google Pay inteqrasiyası
+
+**Təsir:** Ödəniş müddəti azalır → conversion artır
+
+---
+
+## Strategiya 4: Qiymət şəffaflığı (Pricing Transparency)
+
+**Insight:** Çatdırılma və əlavə ödənişlərin sonda görünməsi istifadəçidə “qiymət şoku” yaradır.
+
+**Hipotez:** Bütün xərclər əvvəlcədən və aydın göstərilsə, istifadəçi prosesi tərk etməz.
+
+**Həll:**
+
+* Delivery fee-ni əvvəlki mərhələdə göstərmək
+* Checkout zamanı total qiyməti daim visible saxlamaq
+* “Free delivery” threshold (məs: 20₼ üzəri pulsuz)
+
+**Təsir:** Sürprizlər azalır → istifadəçi daha güvənli qərar verir
+
+---
+
+## Strategiya 5: Aydın yönləndirmə (CTA Clarity & Guidance)
+
+**Insight:** İstifadəçi növbəti addımı aydın görmədikdə tərəddüd edir və prosesi dayandırır.
+
+**Hipotez:** Əsas CTA daha görünən və konkret olsa, istifadəçi tərəddüd etmədən davam edər.
+
+**Həll:**
+
+* Kontrastlı və diqqətçəkən CTA dizaynı
+* Sticky “Order now” button
+* Mikrocopy: “Sifarişi tamamla • 12₼” kimi konkret mesaj
+
+**Təsir:** Qarışıqlıq azalır → istifadəçi daha tez qərar verir
+
+---
+
+## Prioritization
+
+Bütün strategiyalar eyni dəyərə malik deyil. İlkin fokus aşağıdakı kimi prioritetləşdirilir:
+
+1. Payment Convenience — ən yüksək impact (birbaşa conversion təsiri)
+2. Flow Optimization — yüksək impact (friction azalır)
+3. Pricing Transparency — orta-yüksək impact (user trust)
+4. Data Entry Optimization — orta impact
+5. CTA Clarity — aşağı impact (supporting improvement)
+
+---
+
+## Success Metrics
+
+Uğuru ölçmək üçün əsas metriklər:
+
+* Checkout completion rate (%)
+* Drop-off rate (step-by-step)
+* Time to complete checkout
+* Payment success rate
+
+---
+
+## Next Steps
+
+* A/B test ilə strategiyaları yoxlamaq
+* İstifadəçi davranışını analiz etmək (heatmaps, session recordings)
+* Ən yüksək impact verən dəyişiklikləri iterativ şəkildə tətbiq etmək
+
+---
+
+## Nəticə
+
+Checkout abandonment tək səbəbdən yaranmır. Problem bir neçə qatdadır:
+
+* UX friction
+* Məlumat yükü
+* Ödəniş çətinliyi
+* Qiymət şəffaflığı
+* Vizual yönləndirmə
+
+Bu səbəbdən həll də tək deyil — bu strategiyalar birlikdə test olunmalı və ölçülməlidir.
+
+Ən effektiv yanaşma:
+→ Kiçik iterasiyalar + A/B test + real istifadəçi davranışı analizi
