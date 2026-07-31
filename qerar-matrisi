@@ -1,0 +1,5 @@
+İlkin versiyada ekranlar vizual olaraq aydın olsa da, istifadəçi üçün ən kritik sual – “kuryer haradadır və proses hansı mərhələdədir” – kifayət qədər fokuslanmamışdı. Iterasiya zamanı tracking ekranında xəritə əsas informasiya qatına çevrildi, “kuryer axtarılır” və status mesajları isə daha aydın və prioritetli şəkildə yerləşdirildi ki, istifadəçi vəziyyəti bir baxışda anlaya bilsin.
+
+Error state əvvəlcə sadəcə problem göstərirdi, lakin istifadəçiyə kontekst vermirdi. Son versiyada isə səbəb (GPS/internet problemi) və aydın aksiyon (“yenidən cəhd et”) əlavə edilərək istifadəçinin qərarsız qalmasının qarşısı alındı. Loading state də generik skeleton-dan çıxarılıb tracking kontekstinə uyğunlaşdırıldı ki, istifadəçi boş ekran yox, prosesin davam etdiyini hiss etsin.
+
+Bundan əlavə, sistemdə aktiv sifariş olmadığı halları nəzərə alaraq ayrıca empty state dizayn edildi və istifadəçiyə növbəti addım (“sifariş et”) göstərildi. Nəticədə son versiya yalnız vizual deyil, davranış baxımından daha güclüdür: istifadəçi hər state-də nə baş verdiyini anlayır və nə etməli olduğunu düşünmədən hərəkət edə bilir.
