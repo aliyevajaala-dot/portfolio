@@ -7,3 +7,16 @@
 | **Design system-ə uyğunluq** | Tipoqrafiya təmizdir, amma rəng seçimləri (qırmızı CTA, tünd status badge) brend sisteminə bağlı görünmür və ayrıca komponent kimi hiss olunur | Yaşıl rəng ardıcıl tətbiq olunub (FastBite loqosu ilə uyğun), ikon dili (restoran/təyinat pin-ləri, moped ikonu) sistemli və təkrarlana biləndir |
 | **İterasiya asanlığı** | Çox yüksək — elementlər manual dəyişdirilə bilir, nəticə dərhal görünür | Orta — dəyişiklik üçün yenidən prompt yazmaq və regenerate etmək lazımdır |
 | **Hansı iş üçün üstünlük verərdin?** | Marketinq / hero ekranları, konsept təqdimatları — vizual təsirin vacib olduğu yerlər | Real funksional axınlar (order tracking, checkout, lokallaşdırılmış UI) — sistemli və məhsula yaxın işlər |
+
+-------
+
+Nəticə:
+
+Bu iki ekranı müqayisə edəndə aydın olur ki, Figma AI ilə alınan nəticə vizual olaraq daha cəlbedicidir və sanki artıq hazır məhsul kimidir. Canlı izləmə badge-i, progress indikatoru və kuryer kartı daha düşünülmüş görünür.
+Amma eyni zamanda xəritə fonunun real marşrutu göstərməməsi və rənglərin konkret bir brendə bağlı olmaması bu ekranı bir az “konsept səviyyəsində” saxlayır.
+
+Stitch ilə hazırlanan ekran isə ilk baxışda daha sadə görünür, amma funksional tərəfdən daha məntiqlidir. 
+Marşrut aydın göstərilir, sifariş detalları düzgün yerləşdirilib və ən əsası, brend rəngləri ardıcıl istifadə olunub. Bu da onu real məhsula daha yaxın edir.
+
+Ümumi olaraq belə nəticəyə gəlirəm ki, Figma AI daha çox ideya və vizual istiqamət tapmaq üçün uyğundur, Stitch isə həmin ideyanı real məhsula çevirməkdə daha etibarlıdır.
+Növbəti dəfə mən bu iki aləti ayrı-ayrılıqda yox, birlikdə istifadə edərdim: əvvəl Figma AI ilə sürətli vizual variantlar çıxarıb, sonra isə Stitch və ya manual düzəlişlə onu daha sistemli və real məhsul səviyyəsinə gətirərdim
