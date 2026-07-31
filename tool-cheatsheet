@@ -1,0 +1,9 @@
+## Tool Comparison – Figma AI vs Stitch
+
+| Kriteriya | Alət 1 (Figma AI) | Alət 2 (Stitch) |
+|----------|------------------|-----------------|
+| **Sürət (nə qədər çəkdi)** | 1 dəqiqədən az | 1 dəqiqəyq yaxın  
+| **İlkin nəticənin keyfiyyəti** | Vizual cəhətdən zərif — canlı izləmə badge, progress bar (Preparing / On the way / Delivered), kuryer kartı yaxşı strukturlaşıb. Amma xəritə arxa fonu dekorativ görünür və real marşrutla əlaqəli deyil | Sadə və funksional — restoran → təyinat marşrutu aydın göstərilib, kuryer ikonu yol üzərindədir, sifariş detalları (KFC Nizami • 12.40 AZN) inteqrasiya olunub |
+| **Design system-ə uyğunluq** | Tipoqrafiya təmizdir, amma rəng seçimləri (qırmızı CTA, tünd status badge) brend sisteminə bağlı görünmür və ayrıca komponent kimi hiss olunur | Yaşıl rəng ardıcıl tətbiq olunub (FastBite loqosu ilə uyğun), ikon dili (restoran/təyinat pin-ləri, moped ikonu) sistemli və təkrarlana biləndir |
+| **İterasiya asanlığı** | Çox yüksək — elementlər manual dəyişdirilə bilir, nəticə dərhal görünür | Orta — dəyişiklik üçün yenidən prompt yazmaq və regenerate etmək lazımdır |
+| **Hansı iş üçün üstünlük verərdin?** | Marketinq / hero ekranları, konsept təqdimatları — vizual təsirin vacib olduğu yerlər | Real funksional axınlar (order tracking, checkout, lokallaşdırılmış UI) — sistemli və məhsula yaxın işlər |
