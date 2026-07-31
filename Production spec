@@ -1,0 +1,47 @@
+Act as a senior UX/UI designer.
+
+Design ONE mobile screen: “Order Tracking” for a food delivery app.
+
+Focus only on the DEFAULT state (courier is on the way).
+
+Requirements:
+
+* Top section: Status + ETA
+
+  * Status: “Kuryer yoldadır”
+  * ETA must be the most dominant element: “15 dəqiqəyə çatacaq”
+
+* Middle section: Live map
+
+  * Show courier location (moving)
+  * Show user location
+  * Show route line
+  * Clean, minimal map UI
+
+* Bottom section: Courier info card
+
+  * Name: Rəşad Əliyev
+  * Rating: 4.8
+  * Photo
+  * Actions: Call, Message
+
+* Order summary (secondary, small or collapsed)
+
+  * KFC Nizami
+  * Zinger Burger, Fries, Cola
+  * 12.40 AZN
+
+Design rules:
+
+* Mobile-first, clean layout
+* Strong visual hierarchy (ETA > everything)
+* 8px spacing system
+* Font: Plus Jakarta Sans
+* Background: #FAFAFA
+* No ads, no unnecessary elements
+
+Output:
+
+* One clean mobile UI screen
+* Proper spacing, alignment, and hierarchy
+* Think like a real product, not just a concept
