@@ -1,7 +1,55 @@
-Status badge-lər (HOT, NEW, 20% OFF) fərqli rəng və vizual çəkidədir, amma prioritet sırası aydın deyil-İstifadəçi hansı məhsulun daha vacib olduğunu tez ayıra bilmir-Vizual ierarxiya pozulub
-Out of stock məhsul “sold” overlay ilə göstərilir, amma digər kartlardan tam fərqli opacity ilədir-Bu kart vizual olaraq “disabled” kimi görünür, amma sistem davranışı (klik oluna bilərmi?) qeyri-müəyyəndir-Affordance pozulub
-“Free tmrw”, “Same-day”, “Free in 2 days” kimi delivery məlumatları fərqli formatlarda yazılıb-İstifadəçi pattern öyrənə bilmir, hər kartı ayrıca oxumalı olur-Ardıcıllıq pozulub
-Rating (4.9, 4.7 və s.) vizual olaraq aşağı prioritetdədir və ikon + rəqəm birlikdə zəif vurğulanıb-Skan zamanı istifadəçi keyfiyyət siqnalını tez tuta bilmir-Vizual ierarxiya pozulub
-Kart klik edildikdə və ya seçim zamanı heç bir vizual feedback göstərilmir-İstifadəçi sistemin reaksiyasını hiss etmir, bu isə qeyri-müəyyənlik yaradır-Geri-bildirim prinsipi pozulub
-Bir kart daxilində bir neçə informasiya növü eyni anda göstərilir-İstifadəçi sürətli scroll zamanı hamısını paralel emal etməlidir-Yük prinsipi pozulub
-Out of stock məhsulda yalnız status göstərilir, alternativ hərəkət (məsələn notify) yoxdur-İstifadəçi çıxış yolu tapmır və flow qırılır-Xəta önləmə prinsipi pozulub
+# Product Card UX Critique
+
+## 1. Status Badge (SICAK / YENİ / %20 İNDİRİM)
+- Status rozeti vizual olaraq diqqət çəkir, amma prioritet sırası aydın deyil.
+- İstifadəçi hansı məhsulun daha vacib və ya daha çox dəyərli olduğunu tez ayırd edə bilmir.
+- Vizual iyerarxiya pozulub.
+
+---
+
+## 2. Stokda olmayan məhsullar
+- “Stokta yok” məhsullar “satıldı” overlay ilə göstərilir.
+- Kartlar opacity ilə deaktiv edilmiş kimi görünür.
+- Sistem davranışı qeyri-müəyyəndir:
+  - Kart klik oluna bilərmi?
+  - yoxsa tam deaktivdir?
+- Affordance problemi var.
+
+---
+
+## 3. Delivery məlumatları
+- “Free tmrw”, “Aynı gün”, “2 gün içinde bedava” kimi məlumatlar fərqli formatlarda verilir.
+- İstifadəçi üçün vahid pattern yoxdur.
+- Ödəniş / çatdırılma məlumatı ayrıca oxunmalı olur.
+- Ardıcıllıq pozulub.
+
+---
+
+## 4. Rating (Reytinq sistemi)
+- Rating (4.9, 4.7 və s.) vizual olaraq aşağı prioritetdədir.
+- İkon + rəqəm birlikdə zəif vurğulanıb.
+- İstifadəçi keyfiyyət siqnalını sürətli skan edə bilmir.
+
+---
+
+## 5. Feedback (Geri bildirim)
+- Kart klik edildikdə və ya seçildikdə vizual geri bildirim yoxdur.
+- İstifadəçi sistemin reaksiyasını hiss etmir.
+- Qeyri-müəyyənlik yaranır.
+
+---
+
+## 6. Cognitive Load (Yük prinsipi)
+- Bir kart daxilində çox sayda məlumat eyni anda göstərilir.
+- İstifadəçi scroll zamanı paralel olaraq çox məlumat emal etməlidir.
+- Bu, qərar vermə sürətini azaldır.
+
+---
+
+## 7. Error Prevention (Xəta önləmə)
+- Stokda olmayan məhsullarda alternativ hərəkət yoxdur:
+  - “Notify me” kimi seçim yoxdur.
+- İstifadəçi çıxış yolu tapa bilmir.
+- Akış qırılır və istifadəçi məyus olur.
+
+---
